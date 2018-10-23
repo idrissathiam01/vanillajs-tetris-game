@@ -1,0 +1,26 @@
+# Requirements for Tetris Minimum Viable Product:
+
+- Create HTML Canvas
+- Create Tetromino Pieces:
+	- Create I piece with red color
+	- Create J piece with magenta color
+	- Create L piece with yellow color
+	- Create O piece with cyan color
+	- Create S piece with blue color
+	- Create T piece with silver color
+	- Create Z piece with green color
+- Start falling Tetromino interation
+	- Randomize tetromino piece to fall
+	- Animate falling tetromino
+	- Set speed of falling tetromino
+	- Allow user to shift falling tetromino left or right
+	- Allow user to rotate tetromino
+	- Freeze falling tetromino when it reaches the bottom of canvas.
+	- Make sure tetromino cannot overlap on top of each other.
+- End loop and begin n+1 iteration
+    - Assign points when sides of new falling tetromino freeze besides already frozen tetromino of the same color.  
+		- Calculate and save points to variable
+		- At n+random(k) clear lowest level block of frozen tetromino
+- End game loop when frozen tetromino reaches the top of the canvas.
+- Establish OR condition to end game loop when all blocks of frozen are cleared from canvas.
+- Once game has ended, print points.
